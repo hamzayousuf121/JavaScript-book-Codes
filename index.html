@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        
+    <h2>Do <em>not</em> hit!</h2>
+    <div id='div1'></div>
+    <div id='para'>
+    <p>THis is th e  1test message</p>
+    <p>THis is th e 2test message</p>
+    <p>THis is th e 3test message</p>
+    <p>THis is th e 4test message</p>
+    <p>THis is th e 5test message</p>
+</div>
+    <script>
+        // var nodeToAdd = document.createElement("p");
+        // var buttonNode= document.createElement('button')
+        // buttonNode.setAttribute("id", 'btn1')
+        // var btnTxtNode = document.createTextNode("Click");
+        // var newTxt = document.createTextNode("Hello!");
+        // buttonNode.appendChild(btnTxtNode)
+        // nodeToAdd.appendChild(buttonNode)
+        // nodeToAdd.appendChild(newTxt);
+        // var nodeToAdd2 = document.createElement("p");
+        // var newText = document.createTextNode("Hello 2!");
+        // nodeToAdd2.appendChild(buttonNode)
+        // nodeToAdd2.appendChild(newText);
+        // nodeToAdd2.removeChild(newText);
+        // document.getElementById('div2').appendChild(nodeToAdd);
+        // document.getElementById('div2').appendChild(nodeToAdd2); -->
+
+
+        // var html = '<p><button></button></p>'
+        // document.getElementById('div1').innerHTML = html
+
+
+
+        // var element = document.getElementsByTagName('h2')
+        // console.log(element[0].nodeValue)
+
+        // var elementEm = document.getElementsByTagName('em')
+        // console.log(elementEm[0].nodeValue)
+
+        // var i = 0
+        // for(; false; i++) {
+        //     console.log('workingggggg for loop')
+        // }
+
+       
+        // for(;false ;1+1) {
+        //     console.log('workingggggg for loop')
+        // }
+
+
+
+        // var j=0
+        // while(false) {
+        //     console.log('workingggggg while loop')
+        //     j++
+        // }
+
+        
+
+        
+        // change bg color by while loop using next sibling
+
+        var j=document.getElementById('para')
+        var container = j.firstChild;
+
+        while(container != null) {
+            console.log("HAMza");
+          // container.style.backgroundColor = 'red';
+            container = container.nextSibling;
+            console.log(container);
+        }
+
+    </script>
+</body>
+</html>
